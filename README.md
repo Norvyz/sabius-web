@@ -12,7 +12,7 @@ Este sitio web fue creado para presentar de forma interactiva y profesional nues
 - Resolver ecuaciones matemáticas
 - Consultar diccionarios en inglés
 - Obtener información de libros
-- Y mucho más... ¡sin salir de Discord!
+  ¡sin salir de Discord!
 
 ## 🧩 ¿Qué encontrarás en esta página?
 
@@ -43,4 +43,4 @@ Autor de íconos: **Heykiyou** - [Ver perfil](https://www.flaticon.es/autores/he
 
 ---
 
-📌 Proyecto desarrollado con ❤️ por [Norvey Márquez](https://github.com/Norvyz)
+📌 Proyecto desarrollado con ❤️ por [Norvy](https://github.com/Norvyz)
