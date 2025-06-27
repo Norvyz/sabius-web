@@ -134,9 +134,10 @@ body.dark-mode .comandos li {
   background-color: #444;
 }
 
-.btn.secondary {
-  background-color: #ffffff;
+.btn.third {
+  background-color: #28a745;
 }
+
 .btn.contact {
   background-color: #1c8adb;
 }
