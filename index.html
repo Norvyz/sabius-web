@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sabius es un bot de Discord creado con JavaScript y Node.js. Traduce, busca, resuelve matemáticas y más directamente desde tu servidor.">
+
+  <title>Sabius - Tu compañero en Discord</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS - Animaciones al hacer scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/logo.png" type="image/png">
+</head>
+<body>
+
+  <header>
+    <div class="theme-toggle">
+      <img src="assets/sun.png" alt="Modo Claro" id="theme-icon">
+    </div>
+
+    <div class="header-overlay">
+      <img src="assets/logo.png" alt="Logo de Sabius" class="logo">
+      <h1>Sabius</h1>
+      <p class="slogan">Tu compañero inteligente en Discord</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="descripcion" data-aos="fade-up">
+      <h2>¿Qué es Sabius?</h2>
+      <p>Sabius es un bot de Discord creado con JavaScript y Node.js. Diseñado para estudiantes y curiosos, permite consultar información, traducir textos, resolver matemáticas y mucho más, sin salir de Discord.</p>
+    </section>
+
+    <section class="comandos" data-aos="fade-up" data-aos-delay="200">
+      <h2>Comandos Destacados</h2>
+      <ul>
+        <li data-aos="fade-up" data-aos-delay="300"><strong>🔍 /buscar</strong> - Consulta definiciones o temas desde Wikipedia, con opción de traducir al idioma que elijas.</li>
+        <li data-aos="fade-up" data-aos-delay="400"><strong>🌐 /traducir</strong> - Traduce texto del español a otros idiomas y viceversa.</li>
+        <li data-aos="fade-up" data-aos-delay="500"><strong>🧐 /resolver</strong> - Resuelve expresiones matemáticas con pasos explicados.</li>
+        <li data-aos="fade-up" data-aos-delay="600"><strong>📖 /libros</strong> - Busca información de libros desde Open Library.</li>
+        <li data-aos="fade-up" data-aos-delay="700"><strong>📘 /diccionario</strong> - Consulta el significado y sinónimos de una palabra en inglés.</li>
+        <li data-aos="fade-up" data-aos-delay="800"><strong>📜 /ayuda</strong> - Muestra los comandos disponibles y cómo usarlos.</li>
+      </ul>
+    </section>
+
+    <section class="botones" data-aos="zoom-in" data-aos-delay="1000">
+      <a href="https://discord.com/oauth2/authorize?client_id=1386461732418879528&permissions=2147863616&integration_type=0&scope=bot" class="btn">Invitar a Sabius</a>
+      <a href="https://discord.gg/SQkGc6fv53" class="btn secondary">Servidor de Soporte</a>
+    </section>
+  </main>
+
+  <section class="botones" data-aos="fade-up">
+  <h2>¿Quieres un bot como Sabius?</h2>
+  <p>Contáctame y crea un bot personalizado para tu servidor de Discord.</p>
+  <a class="btn contact" href="https://www.instagram.com/elnorvy/" target="_blank">🚀 Crear mi Bot</a>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Sabius Bot. Creado por Norvy</p>
+    <small>
+      <a href="https://www.flaticon.es/autores/heykiyou" title="Space | Color fill" target="_blank" style="color: #ccc; text-decoration: underline;">
+        Space | Color fill creados por Heykiyou - Flaticon
+      </a>
+    </small>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+
+</body>
+</html>
