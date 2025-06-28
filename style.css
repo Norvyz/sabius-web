@@ -42,7 +42,6 @@ header > * {
   z-index: 1;
 }
 
-
 body.dark-mode header {
   filter: brightness(0.7);
 }
@@ -51,7 +50,6 @@ header {
   background-color: transparent !important;
   filter: none !important;
 }
-
 
 /* Botón modo oscuro / claro */
 .theme-toggle {
@@ -114,18 +112,25 @@ body.dark-mode .comandos li {
   background: #2a2a2a;
 }
 
-/* Botones */
-.botones .btn {
+/* Sección de botones centrados */
+.botones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+/* Botones generales */
+.btn {
   display: inline-block;
-  margin: 10px;
   padding: 12px 25px;
+  min-width: 260px;
+  text-align: center;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
   transition: transform 0.3s, background-color 0.3s;
-}
-
-.btn {
   background-color: #5865F2;
   color: white;
 }
@@ -150,10 +155,6 @@ body.dark-mode .comandos li {
   background-color: #333;
 }
 
-.btn.contact:hover {
-  background-color: #0f6ab4;
-}
-
 /* Footer */
 footer {
   background-color: #222;
@@ -169,6 +170,47 @@ body.dark-mode footer {
   color: #aaa;
 }
 
+/* Sección "Crear mi Bot" */
+.crear-bot {
+  text-align: center;
+  margin: 60px auto;
+  padding: 30px 20px;
+  max-width: 600px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dark-mode .crear-bot {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.crear-bot h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.crear-bot p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.crear-bot .btn.contact {
+  background-color: #1c8adb;
+  color: white;
+  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.crear-bot .btn.contact:hover {
+  background-color: #0f6ab4;
+}
+
+/* Responsive */
 @media screen and (max-width: 600px) {
   header h1 {
     font-size: 24px;
@@ -188,8 +230,8 @@ body.dark-mode footer {
     margin: 8px auto;
   }
 
-  .botones .btn {
-    display: block;
+  .botones .btn,
+  .crear-bot .btn {
     width: 90%;
     margin: 10px auto;
   }
@@ -216,27 +258,14 @@ body.dark-mode footer {
     font-size: 14px;
   }
 }
-
-.crear-bot {
-  text-align: center;
-  margin: 60px auto;
-  padding: 30px 20px;
-  max-width: 600px;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.dark-mode .crear-bot {
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.crear-bot h2 {
-  margin-bottom: 10px;
-  font-size: 26px;
-}
-
-.crear-bot p {
-  margin-bottom: 20px;
-  font-size: 16px;
-}
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
